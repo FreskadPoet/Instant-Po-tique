@@ -1,12 +1,12 @@
-.restora-regular {
-    font-family: "Restora", cursive;
+.pacifico-regular {
+    font-family: "Pacifico", cursive;
     font-weight: 400;
     font-style: normal;
   }
   
 
-.georgia-script-font {
-  font-family: "Georgia Script", cursive;
+.dancing-script-font {
+  font-family: "Dancing Script", cursive;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
@@ -40,7 +40,7 @@ body {
 
 #title {
     font-size: xx-large;
-    font-family: "Restora", Calibri, Tahoma, sans-serif;
+    font-family: "Pacifico", Calibri, Tahoma, sans-serif;
 
     background: 50% 100% / 50% 50% no-repeat
               radial-gradient(ellipse at bottom, #fff, transparent, transparent);
@@ -52,7 +52,7 @@ body {
 
 #content {
     font-size: x-large;
-    font-family: "Georgia", Calibri, Tahoma, sans-serif;
+    font-family: "Dancing Script", Calibri, Tahoma, sans-serif;
 }
 
 .char {
