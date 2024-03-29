@@ -6,7 +6,7 @@ body {
     justify-content: center;
 }
 
-#content, #title, #contact {
+#content, #title {
     text-align: center;
 }
 
@@ -23,6 +23,7 @@ body {
 }
 
 #content {
+    text-align: left;
     font-size: x-large;
     font-family: Georgia, Times, "Times New Roman", serif
 }
