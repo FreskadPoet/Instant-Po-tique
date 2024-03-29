@@ -5,8 +5,8 @@
   }
   
 
-.dancing-script-font {
-  font-family: "Dancing Script", cursive;
+.georgia-script-font {
+  font-family: "Georgia Script", cursive;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
@@ -52,7 +52,7 @@ body {
 
 #content {
     font-size: x-large;
-    font-family: "Dancing Script", Calibri, Tahoma, sans-serif;
+    font-family: "Georgia", Calibri, Tahoma, sans-serif;
 }
 
 .char {
