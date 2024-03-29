@@ -23,12 +23,12 @@ body {
 }
 
 #content {
-    text-align: left;
     font-size: x-large;
     font-family: Georgia, Times, "Times New Roman", serif
 }
 
 #contact {
+    text-align: left;
     font-size: large;
     font-family: Helvetica, Times, "Times New Roman", serif
 }
