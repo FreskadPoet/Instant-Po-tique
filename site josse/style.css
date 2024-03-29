@@ -27,6 +27,11 @@ body {
     font-family: Georgia, Times, "Times New Roman", serif
 }
 
+#contact {
+    font-size: x-large;
+    font-family: Helvetica, Times, "Times New Roman", serif
+}
+
 .char {
     animation: an 2s ease-out 1 both;
     display: inline-block;
