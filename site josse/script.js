@@ -1,16 +1,3 @@
-// https://fonts.google.com/?classification=Handwriting    pour les polices
-/*
-from{
-    transform: perspective(500px) translate3d(-35px, -40px, -150px) rotate3d(1, -1, 0, 35deg);
-    opacity: 0;
-}
-to{
-    transform: perspective(500px) translate3d(0, 0, 0);
-    opacity: 1;
-}
-
-*/
-
 function randint(max) {
     return Math.floor(Math.random() * max);
 }
@@ -43,8 +30,10 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         }
     }
-
+    newDom += '<span class="char author">' + poeme[2] + '</span>'; // add the author with the 'author' class
+    
     poemeContent.innerHTML = newDom;
+    
     var length = poemeContent.children.length;
 
     for (let i = 0; i < length; i++) {
