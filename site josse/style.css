@@ -1,64 +1,72 @@
+/* Réglages généraux pour le corps de la page */
 body {
-    background: #333641;
-    color: #fff;
-    display: flex;
+    background: #333641; /* Couleur de fond */
+    color: #fff; /* Couleur du texte */
+    display: flex; /* Utilisation de Flexbox pour centrer verticalement et horizontalement */
     align-items: center;
     justify-content: center;
 }
 
-#content, #title {
-    text-align: center;
-}
-
+/* Styles pour le contenu et le titre */
+#content,
 #title {
-    font-size: xx-large;
-    font-family: Georgia, Times, "Times New Roman", serif
+    text-align: center; /* Centrage du texte */
+}
 
-    background: 50% 100% / 50% 50% no-repeat
-              radial-gradient(ellipse at bottom, #fff, transparent, transparent);
-    -webkit-background-clip: text;
+/* Styles spécifiques pour le titre */
+#title {
+    font-size: xx-large; /* Taille de police plus grande */
+    font-family: Georgia, Times, "Times New Roman", serif; /* Police de caractères */
+    background: 50% 100% / 50% 50% no-repeat radial-gradient(ellipse at bottom, #fff, transparent, transparent); /* Dégradé radial en arrière-plan */
+    -webkit-background-clip: text; /* Utilisation du texte comme masque pour le dégradé */
     background-clip: text;
-    color: transparent;
-    animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms;
+    color: transparent; /* Texte transparent */
+    animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms; /* Animations pour révéler le texte et lui donner un effet de lueur */
 }
 
+/* Styles pour le contenu */
 #content {
-    font-size: x-large;
-    font-family: Georgia, Times, "Times New Roman", serif
+    font-size: x-large; /* Taille de police plus grande */
+    font-family: Georgia, Times, "Times New Roman", serif; /* Police de caractères */
 }
 
+/* Styles pour le contact */
 #contact {
-    font-size: large;
-    font-family: Helvetica, Times, "Times New Roman", serif
+    font-size: large; /* Taille de police plus grande */
+    font-family: Helvetica, Times, "Times New Roman", serif; /* Police de caractères */
 }
 
+/* Animation pour chaque caractère */
 .char {
-    animation: an 2s ease-out 1 both;
-    display: inline-block;
+    animation: an 2s ease-out 1 both; /* Animation de défilement pour chaque caractère */
+    display: inline-block; /* Affichage en ligne pour garder les caractères sur la même ligne */
 }
 
-@keyframes an{
+/* Animation de défilement */
+@keyframes an {
     from {
-        transform: perspective(500px) translate(0px, 40px);
-        opacity: 0;
+        transform: perspective(500px) translate(0px, 40px); /* Animation de déplacement et de perspective */
+        opacity: 0; /* Opacité initiale */
     }
     to {
-        transform: translate(0px, 0px);
-        opacity: 1;
+        transform: translate(0px, 0px); /* Déplacement final */
+        opacity: 1; /* Opacité finale */
     }
 }
 
-
+/* Animation pour révéler le texte */
 @keyframes reveal {
     80% {
-        letter-spacing: 8px;
+        letter-spacing: 8px; /* Espacement des lettres à 80% de l'animation */
     }
     100% {
-        background-size: 300% 300%;
+        background-size: 300% 300%; /* Taille finale de l'arrière-plan */
     }
 }
+
+/* Animation pour l'effet de lueur */
 @keyframes glow {
     40% {
-        text-shadow: 0 0 8px #fff;
+        text-shadow: 0 0 8px #fff; /* Ombre du texte à 40% de l'animation */
     }
-}  
+}
