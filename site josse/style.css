@@ -42,6 +42,12 @@ body {
     display: inline-block; /* Affichage en ligne pour garder les caractères sur la même ligne */
 }
 
+.auteur {
+    color: hsl(0, 0%, 70%);
+    background: linear-gradient(to top, hsl(0, 0%, 70%) 0%, hsl(0, 0%, 70%) 1%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    animation: an 2s ease-out 1 both, underline ease-in-out 2s both;
+}
+
 /* Animation de défilement */
 @keyframes an {
     from {
