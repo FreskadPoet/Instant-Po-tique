@@ -1,24 +1,11 @@
-// https://fonts.google.com/?classification=Handwriting    pour les polices
-/*
-from{
-    transform: perspective(500px) translate3d(-35px, -40px, -150px) rotate3d(1, -1, 0, 35deg);
-    opacity: 0;
-}
-to{
-    transform: perspective(500px) translate3d(0, 0, 0);
-    opacity: 1;
-}
-
-*/
-
-function randint(max) {
+function randint(max) { // function to generate a random number between 0 and max
     return Math.floor(Math.random() * max);
 }
 
-poeme = poemes[randint(poemes.length)];
+poeme = poemes[randint(poemes.length)];  // select a random poem
 
 document.addEventListener("DOMContentLoaded", () => {
-    var poemeElement = document.getElementById("poeme");
+    var poemeElement = document.getElementById("poeme");  // create the poem tags
     var poemeTitle = document.createElement("h1");
     poemeTitle.id = "title";
     poemeTitle.textContent = poeme[0];
@@ -26,10 +13,10 @@ document.addEventListener("DOMContentLoaded", () => {
     poemeContent.id = "content";
     poemeContent.innerText = poeme[1];
 
-    poemeElement.appendChild(poemeTitle);
+    poemeElement.appendChild(poemeTitle);  // add the poem to the html
     poemeElement.appendChild(poemeContent);
 
-    var newDom = "";
+    var newDom = ""; // all the lines after are for the poem content (excluding the title) animation
     var animationDelay = 50;
 
     var words = poemeContent.innerHTML.split(" ");
